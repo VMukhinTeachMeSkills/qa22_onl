@@ -2,10 +2,10 @@ package lesson5.hw;
 
 public class Computer
 {
-    float price;
-    String model;
-    RAM ram;
-    HDD hdd;
+    private float price;
+    private String model;
+    private RAM ram;
+    private HDD hdd;
 
     public Computer(float price, String model)
     {
@@ -37,5 +37,15 @@ public class Computer
                 ", ram=" + ram +
                 ", hdd=" + hdd +
                 '}';
+    }
+
+    public float getPrice()
+    {
+        return price;
+    }
+
+    public void setPrice(float price)
+    {
+        this.price = price;
     }
 }
